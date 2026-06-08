@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Our Menu - The Hungry Hub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
-            padding: 20px;
-            background: #fff8f0;
-        }
-        h1 { color: #e63946; }
-        img { max-width: 100%; border-radius: 10px; margin: 20px 0; }
-        .btn {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin: 10px;
-        }
-        .call-btn { background: #007bff; }
-        .contact { 
-            margin-top: 30px; 
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .address { 
-            font-size: 16px; 
-            line-height: 1.6;
-            margin-top: 15px;
-        }
-    </style>
+  <title>Menu - The Hungry Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial; margin: 0; background: #fafafa; }
+    .header { background: white; padding: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+    .logo { height: 60px; }
+    .menu { padding: 20px; max-width: 700px; margin: auto; }
+    h1 { text-align: center; color: #1a1a1a; margin-bottom: 10px; }
+    .tagline { text-align: center; color: #777; margin-bottom: 20px; }
+    .category { background: #1a1a1a; color: #FFD700; padding: 12px; border-radius: 8px; margin-top: 25px; font-size: 18px; font-weight: bold; }
+    .item { background: white; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 1px 4px #ddd; display: flex; justify-content: space-between; align-items: center; }
+    .item-name { font-weight: bold; font-size: 16px; }
+    .item-desc { font-size: 12px; color: #777; margin-top: 3px; }
+    .price { color: #e63946; font-weight: bold; font-size: 18px; white-space: nowrap; margin-left: 10px; }
+    .order-btn { background: #25D366; color: white; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; display: block; margin: 20px 0; font-weight: bold; font-size: 18px; }
+    .veg { color: green; font-size: 12px; } .nonveg { color: #e63946; font-size: 12px; }
+    .footer-btn { background: #1a1a1a; color: white; }
+    .lunch-badge { background: #FFD700; color: #1a1a1a; padding: 3px 8px; border-radius: 4px; font-size: 11px; margin-left: 5px; }
+  </style>
 </head>
 <body>
-    <h1>🍽️ Our Menu 🍽️</h1>
-    <img src="menu.jpg" alt="The Hungry Hub Menu">
-    
-    <div class="contact">
-        <h2>Order Now!</h2>
-        <a href="https://wa.me/919284514830?text=Hello%20The%20Hungry%20Hub,%20I%20want%20to%20order" class="btn">💬 WhatsApp Order</a>
-        <a href="tel:+919284514830" class="btn call-btn">📞 Call Now</a>
-        
-        <div class="address">
-            <p>📍 <b>Address:</b><br>
-            Signature Heights, Congress Nagar Rd,<br>
-            Behind Shree Shekhawat's Bungalow,<br>
-            Amravati, Maharashtra - 444606</p>
-            <p>🕒 <b>Timings:</b> 11 AM to 11 PM</p>
-        </div>
-    </div>
-    
-    <p style="margin-top:30px;"><a href="index.html">← Back to Home</a></p>
+  <div class="header">
+    <a href="index.html"><img src="logo.png" alt="The Hungry Hub Logo" class="logo"></a>
+  </div>
+  <div class="menu">
+    <h1>📋 Our Menu</h1>
+    <p class="tagline">Fresh, Hot & Delicious Food at Your Doorstep</p>
+    <a href="https://wa.me/919284514830?text=Hi%20The%20Hungry%20Hub,%20I%20want%20to%20order:%20" class="order-btn">💬 Order on WhatsApp</a>
+    <div class="category">🍛 Lunch Special <span class="lunch-badge">12 PM - 4 PM</span></div>
+    <div class="item"><div><span class="item-name">Veg Thali</span> <span class="veg">●</span><br><span class="item-desc">2 Sabzi, 4 Roti, Dal, Rice, Salad, Papad</span></div><span class="price">₹149</span></div>
+    <div class="item"><div><span class="item-name">Paneer Butter Masala + 2 Butter Naan</span> <span class="veg">●</span><br><span class="item-desc">Combo with Salad</span></div><span class="price">₹199</span></div>
+    <div class="item"><div><span class="item-name">Chicken Curry + 2 Butter Naan</span> <span class="nonveg">●</span><br><span class="item-desc">Home style chicken curry</span></div><span class="price">₹229</span></div>
+    <div class="item"><div><span class="item-name">Chicken Biryani</span> <span class="nonveg">●</span><br><span class="item-desc">Full plate with Raita & Salan</span></div><span class="price">₹199</span></div>
+    <div class="item"><div><span class="item-name">Veg Biryani</span> <span class="veg">●</span><br><span class="item-desc">Full plate with Raita</span></div><span class="price">₹159</span></div>
+    <div class="item"><div><span class="item-name">Dal Khichdi</span> <span class="veg">●</span><br><span class="item-desc">With Ghee, Papad, Achar</span></div><span class="price">₹129</span></div>
+    <div class="category">🥟 Momos & Starters</div>
+    <div class="item"><div><span class="item-name">Veg Momos</span> <span class="veg">●</span><br><span class="item-desc">Steamed 8 pcs</span></div><span class="price">₹109</span></div>
+    <div class="item"><div><span class="item-name">Chicken Momos</span> <span class="nonveg">●</span><br><span class="item-desc">Steamed 8 pcs</span></div><span class="price">₹149</span></div>
+    <div class="item"><div><span class="item-name">Chicken Lollipop</span> <span class="nonveg">●</span><br><span class="item-desc">5 pcs with sauce</span></div><span class="price">₹179</span></div>
+    <div class="category">🍕 Pizza & Burgers</div>
+    <div class="item"><div><span class="item-name">Margherita Pizza</span> <span class="veg">●</span><br><span class="item-desc">7 inch</span></div><span class="price">₹179</span></div>
+    <div class="item"><div><span class="item-name">Veg Crispy Burger</span> <span class="veg">●</span></div><span class="price">₹89</span></div>
+    <div class="item"><div><span class="item-name">Chicken Zinger Burger</span> <span class="nonveg">●</span></div><span class="price">₹159</span></div>
+    <div class="category">🍟 Sides & Beverages</div>
+    <div class="item"><div><span class="item-name">Peri Peri Fries</span> <span class="veg">●</span></div><span class="price">₹119</span></div>
+    <div class="item"><div><span class="item-name">Buttermilk / Chaas</span></div><span class="price">₹40</span></div>
+    <div class="item"><div><span class="item-name">Cold Coffee</span></div><span class="price">₹99</span></div>
+    <a href="https://wa.me/919284514830?text=Hi%20The%20Hungry%20Hub,%20I%20want%20to%20order%20Lunch:%20" class="order-btn">💬 Order Lunch on WhatsApp</a>
+    <a href="index.html" class="order-btn footer-btn">🏠 Back to Home</a>
+  </div>
 </body>
 </html>
