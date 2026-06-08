@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Menu - The Hungry Hub</title>
+    <title>Our Menu - The Hungry Hub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 20px;
+            background: #fff8f0;
+        }
+        h1 { color: #e63946; }
+        img { max-width: 100%; border-radius: 10px; margin: 20px 0; }
+        .btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px;
+        }
+        .call-btn { background: #007bff; }
+        .contact { 
+            margin-top: 30px; 
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .address { 
+            font-size: 16px; 
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+    </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding: 10px;">
-    <h1>Our Menu</h1>
-    <img src="menu.jpg" style="width:100%; max-width:800px; border-radius:8px;">
-    <br><br>
-    <a href="index.html">← Back to Home</a>
+<body>
+    <h1>🍽️ Our Menu 🍽️</h1>
+    <img src="menu.jpg" alt="The Hungry Hub Menu">
+    
+    <div class="contact">
+        <h2>Order Now!</h2>
+        <a href="https://wa.me/919284514830?text=Hello%20The%20Hungry%20Hub,%20I%20want%20to%20order" class="btn">💬 WhatsApp Order</a>
+        <a href="tel:+919284514830" class="btn call-btn">📞 Call Now</a>
+        
+        <div class="address">
+            <p>📍 <b>Address:</b><br>
+            Signature Heights, Congress Nagar Rd,<br>
+            Behind Shree Shekhawat's Bungalow,<br>
+            Amravati, Maharashtra - 444606</p>
+            <p>🕒 <b>Timings:</b> 11 AM to 11 PM</p>
+        </div>
+    </div>
+    
+    <p style="margin-top:30px;"><a href="index.html">← Back to Home</a></p>
 </body>
 </html>
